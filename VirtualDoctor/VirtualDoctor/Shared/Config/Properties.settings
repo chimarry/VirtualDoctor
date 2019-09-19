@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VirtualDoctor.Shared.Config" GeneratedClassName="Properties">
+  <Profiles />
+  <Settings>
+    <Setting Name="ButtonProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">0.8</Value>
+    </Setting>
+    <Setting Name="FontFamily" Type="System.Windows.Media.FontFamily" Scope="Application">
+      <Value Profile="(Default)">new FontFamiliy("Century Gothic")</Value>
+    </Setting>
+    <Setting Name="ButtonFontSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="WindowHeightProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="WindowWidthProportion" Type="System.Double" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LanguageClass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-EN</Value>
+    </Setting>
+    <Setting Name="TranslateText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Switch to Serbian</Value>
+    </Setting>
+    <Setting Name="NumberOfRecordsPerPage" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="FontColor" Type="System.Windows.Media.Color" Scope="Application">
+      <Value Profile="(Default)">#FFFFFFFF</Value>
+    </Setting>
+    <Setting Name="LabelFontSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en-EN</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

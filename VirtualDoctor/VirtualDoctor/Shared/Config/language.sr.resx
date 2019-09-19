@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>Nalog</value>
+  </data>
+  <data name="AddingSuccess" xml:space="preserve">
+    <value>Dodavanje u bazu
+je prošlo uspješno.</value>
+  </data>
+  <data name="AirQuality" xml:space="preserve">
+    <value>Kvalitet vazduha</value>
+  </data>
+  <data name="BackwardsButton" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Datum rođenja</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Mjesto rođenja</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Otkaži</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Potvrdi brisanje?</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Naziv države</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Dodaj</value>
+  </data>
+  <data name="DatabaseError" xml:space="preserve">
+    <value>Desila se greška u radu sa bazom podataka.
+Za više informacija, pogledajte
+log fajl.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Obriši</value>
+  </data>
+  <data name="DeletingSuccess" xml:space="preserve">
+    <value>Brisanje je prošlo uspješno.</value>
+  </data>
+  <data name="DrinkingWaterQuality" xml:space="preserve">
+    <value>Kvalitet pijaće vode</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Izmjeni</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email adresa</value>
+  </data>
+  <data name="EntityExists" xml:space="preserve">
+    <value>Operacija nije prošla uspješno,
+jer entitet već postoji u bazi.</value>
+  </data>
+  <data name="EntityNotFound" xml:space="preserve">
+    <value>Nema rezultata</value>
+  </data>
+  <data name="FathersName" xml:space="preserve">
+    <value>Očevo puno ime</value>
+  </data>
+  <data name="FathersProfession" xml:space="preserve">
+    <value>Očeva profesija</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Ženski</value>
+  </data>
+  <data name="FirstPageButton" xml:space="preserve">
+    <value>&lt;&lt;Prva strana</value>
+  </data>
+  <data name="FoodQuality" xml:space="preserve">
+    <value>Kvalitet hrane</value>
+  </data>
+  <data name="ForwardButton" xml:space="preserve">
+    <value>&gt; Sljedeća</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Puno ime i prezime</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Pol</value>
+  </data>
+  <data name="GiveReceipt" xml:space="preserve">
+    <value>Izdaj recept</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="InlandWaterQuality" xml:space="preserve">
+    <value>Kvalitet kopnenih voda</value>
+  </data>
+  <data name="InsuranceNumber" xml:space="preserve">
+    <value>Broj osiguranja</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Prezime</value>
+  </data>
+  <data name="LastPageButton" xml:space="preserve">
+    <value>&gt;&gt;Zadnja strana</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Uloguj se</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Muški</value>
+  </data>
+  <data name="MarriageStatus" xml:space="preserve">
+    <value>Bračni status</value>
+  </data>
+  <data name="Married" xml:space="preserve">
+    <value>Oženjen</value>
+  </data>
+  <data name="MedicalRecordsReview" xml:space="preserve">
+    <value>Pregled kartona</value>
+  </data>
+  <data name="MedicalTitle" xml:space="preserve">
+    <value>Medicinsko zvanje</value>
+  </data>
+  <data name="MedicalVasteInformation" xml:space="preserve">
+    <value>Stopa medicinskog otpada</value>
+  </data>
+  <data name="MothersName" xml:space="preserve">
+    <value>Majčino puno  ime</value>
+  </data>
+  <data name="MothersProfession" xml:space="preserve">
+    <value>Majčina profesija</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="NoiseInformation" xml:space="preserve">
+    <value>Stopa buke</value>
+  </data>
+  <data name="NoKnownRoles" xml:space="preserve">
+    <value>Nemate ulogu u sistemu.</value>
+  </data>
+  <data name="NotMarried" xml:space="preserve">
+    <value>Neudana / Neoženjen</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="PatientControl" xml:space="preserve">
+    <value>Kontrola pacijenta</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>Mjesto</value>
+  </data>
+  <data name="Places" xml:space="preserve">
+    <value>Mjesta</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Poštanski kod</value>
+  </data>
+  <data name="PutInRecord" xml:space="preserve">
+    <value>Upiši u karton</value>
+  </data>
+  <data name="Radiation" xml:space="preserve">
+    <value>Radijacija</value>
+  </data>
+  <data name="RecreationalWaterQuality" xml:space="preserve">
+    <value>Kvalitet vode za rekreaciju</value>
+  </data>
+  <data name="ResidancePlace" xml:space="preserve">
+    <value>Mjesto prebivališta</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>Naziv uloge</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Uloge</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Sačuvaj</value>
+  </data>
+  <data name="ShowingResults" xml:space="preserve">
+    <value>Prikzivanje rezultata</value>
+  </data>
+  <data name="TerrainQuality" xml:space="preserve">
+    <value>Kvalitet zemljišta</value>
+  </data>
+  <data name="UBN" xml:space="preserve">
+    <value>JMB</value>
+  </data>
+  <data name="UpdatingSuccess" xml:space="preserve">
+    <value>Ažuriranje podataka je prošlo uspješno.</value>
+  </data>
+  <data name="VirtualAssistant" xml:space="preserve">
+    <value>Virtuelni asistent</value>
+  </data>
+  <data name="WrongPasswordOrEmail" xml:space="preserve">
+    <value>Unos podataka je pogrešan.
+Radi bezbjednosti naloga kom pokušavate da pristupite,
+ tačna greška nije navedena.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="CurrentClinics" xml:space="preserve">
+    <value>Trenutne klinike</value>
+  </data>
+  <data name="MedicalTitles" xml:space="preserve">
+    <value>Medicinska zvanja</value>
+  </data>
+  <data name="PastClinics" xml:space="preserve">
+    <value>Prošle klinike</value>
+  </data>
+  <data name="WorkExperience" xml:space="preserve">
+    <value>Radno iskustvo</value>
+  </data>
+  <data name="Clinics" xml:space="preserve">
+    <value>Klinike</value>
+  </data>
+  <data name="AddRIght" xml:space="preserve">
+    <value>Dodaj &gt;&gt;</value>
+  </data>
+  <data name="Clinic" xml:space="preserve">
+    <value>Klinika</value>
+  </data>
+  <data name="GettingTitleDate" xml:space="preserve">
+    <value>Datum imenovanja</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="Until" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalji</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Nalozi</value>
+  </data>
+  <data name="Doctors" xml:space="preserve">
+    <value>Doktori</value>
+  </data>
+</root>

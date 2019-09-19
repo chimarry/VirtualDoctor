@@ -1,0 +1,51 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.LocalAccountCRUD.EditModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.LocalAccountCRUD"
+          xmlns:src="clr-namespace:CustomControls;assembly=MultiComboBox"
+        mc:Ignorable="d"
+        Title="EditModal" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#1E222D" Offset="0"/>
+                <GradientStop Color="#95A493" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Email" x:Name="EmailLabel" HorizontalAlignment="Left" Margin="34,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="276" Height="40"/>
+        <Label Content="Full name" x:Name="FullNameLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="41,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="276" Height="40"/>
+        <Label Content="Password" x:Name="PasswordLabel" HorizontalAlignment="Left" Margin="34,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="276" Height="41"/>
+        <Label Content="Roles" x:Name="RolesLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="41,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="276" Height="41"/>
+
+        <TextBox x:Name="EmailBox" HorizontalAlignment="Left" Height="40" Margin="34,55,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="276"/>
+        <TextBox x:Name="FullNameBox" HorizontalAlignment="Left" Height="38" Margin="41,57,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Grid.Column="1"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="34,56,0,0" Grid.Row="2" VerticalAlignment="Top" Width="276" Height="38"/>
+
+        <Button x:Name="SaveButton"  HorizontalAlignment="Left" Margin="180,53,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Height="29"
+                 Background="#7d9e7f" Foreground="White" FontWeight="Bold" Click="SaveButton_Click" IsDefault="True">
+            <TextBlock>Save</TextBlock>
+        </Button>
+        <src:MultiComboBox Margin="41,56.5,79,10.25" Name="selectedItems" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"  SelectionMode="Multiple"                            
+                                 IsCreateNewEnabled="True"
+                                 ItemsSource="{Binding Items}"
+                                 DisplaySeparator=", "
+                                 SelectedItems="{Binding SelectedItems}" Height="38" >
+         
+        </src:MultiComboBox>
+        <Label x:Name="MessageLabel" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Height="85" Width="365">
+            <TextBlock TextWrapping="Wrap" Height="75" Width="355"/>
+        </Label>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\AmbulanceDatabase.dll.config
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\AmbulanceDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\AmbulanceDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\MySql.Data.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\Google.Protobuf.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\MySql.Data.xml
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Release\DatabaseAmbulance.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Release\DatabaseAmbulance.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Release\DatabaseAmbulance.csproj.CopyComplete
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Release\AmbulanceDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Release\AmbulanceDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\ALogger.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\ALogger.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Release\ALogger.dll.config

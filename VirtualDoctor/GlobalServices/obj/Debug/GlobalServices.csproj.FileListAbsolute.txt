@@ -1,0 +1,6 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Debug\GlobalServices.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Debug\GlobalServices.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Debug\GlobalServices.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Debug\GlobalServices.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Debug\GlobalServices.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Debug\GlobalServices.pdb

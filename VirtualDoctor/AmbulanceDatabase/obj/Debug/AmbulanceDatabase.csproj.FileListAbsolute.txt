@@ -1,0 +1,6 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Debug\AmbulanceDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\bin\Debug\AmbulanceDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Debug\AmbulanceDatabase.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Debug\AmbulanceDatabase.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Debug\AmbulanceDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\AmbulanceDatabase\obj\Debug\AmbulanceDatabase.pdb

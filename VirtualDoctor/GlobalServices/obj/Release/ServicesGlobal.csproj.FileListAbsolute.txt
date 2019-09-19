@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalServices.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalServices.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Release\ServicesGlobal.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Release\ServicesGlobal.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Release\ServicesGlobal.csproj.CopyComplete
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Release\GlobalServices.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\obj\Release\GlobalServices.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalServices.dll.config
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\Neo4j.Driver.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\Newtonsoft.Json.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\GlobalDatabase.dll.config
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\Neo4j.Driver.xml
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalServices\bin\Release\Newtonsoft.Json.xml

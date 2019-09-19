@@ -1,0 +1,14 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.MedicalRecordCRUD.Index"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.MedicalRecordCRUD"
+        mc:Ignorable="d"
+        Title="Index" Height="450" Width="800">
+    <Grid x:Name="Grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\VirtualDoctor\Shared\Images\ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Window>

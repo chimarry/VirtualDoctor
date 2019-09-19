@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AmbulanceDatabase.Config" GeneratedClassName="Properties">
+  <Profiles />
+  <Settings>
+    <Setting Name="Ambulance" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">server = localhost; port = 3306; database = ambulance; uid = root; password = marija97;</Value>
+    </Setting>
+    <Setting Name="GroupConcatSeparator" Type="System.Char" Scope="Application">
+      <Value Profile="(Default)">,</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA2F9C00-EB67-4B83-9E8B-8FA7E5E791CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AmbulanceServices</RootNamespace>
+    <AssemblyName>AmbulanceServices</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\IServicesAmbulanceFactory.cs" />
+    <Compile Include="Factories\ServicesAmbulanceFactory.cs" />
+    <Compile Include="Interfaces\IClinicService.cs" />
+    <Compile Include="Interfaces\ICrudServiceTemplate.cs" />
+    <Compile Include="Interfaces\IDoctorService.cs" />
+    <Compile Include="Interfaces\ILocalAccountRoleService.cs" />
+    <Compile Include="Interfaces\ILocalAccountService.cs" />
+    <Compile Include="Interfaces\IMedicalRecordService.cs" />
+    <Compile Include="Interfaces\IMedicalTitleService.cs" />
+    <Compile Include="Interfaces\IPlaceService.cs" />
+    <Compile Include="Interfaces\IPrescriptionService.cs" />
+    <Compile Include="Interfaces\IRoleService.cs" />
+    <Compile Include="Interfaces\ITestResultsService.cs" />
+    <Compile Include="Interfaces\IUserAuthenticationService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClinicService.cs" />
+    <Compile Include="Services\DoctorService.cs" />
+    <Compile Include="Services\LocalAccountRoleService.cs" />
+    <Compile Include="Services\LocalAccountService.cs" />
+    <Compile Include="Services\MedicalRecordService.cs" />
+    <Compile Include="Services\MedicalTitleService.cs" />
+    <Compile Include="Services\PlaceService.cs" />
+    <Compile Include="Services\PrescriptionService.cs" />
+    <Compile Include="Services\RoleService.cs" />
+    <Compile Include="Services\TestResultsService.cs" />
+    <Compile Include="Services\UserAuthenticationService.cs" />
+    <Compile Include="Shared\ServiceHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ALogger\ALogger.csproj">
+      <Project>{C46DCFA0-AC56-47C2-9DAA-486BED22E9B8}</Project>
+      <Name>ALogger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AmbulanceDatabase\DatabaseAmbulance.csproj">
+      <Project>{50bf236a-6213-4143-b90e-bd835d4c4d66}</Project>
+      <Name>DatabaseAmbulance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GlobalServices\ServicesGlobal.csproj">
+      <Project>{dedea025-ef93-4315-9818-ce75c93c2ddf}</Project>
+      <Name>ServicesGlobal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

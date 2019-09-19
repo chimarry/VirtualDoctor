@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\bin\Debug\GlobalDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\bin\Debug\GlobalDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\obj\Debug\GlobalDatabase.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\obj\Debug\GlobalDatabase.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\obj\Debug\GlobalDatabase.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\obj\Debug\GlobalDatabase.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\bin\Debug\MySql.Data.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\bin\Debug\Google.Protobuf.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\bin\Debug\MySql.Data.xml
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\GlobalDatabase\obj\Debug\GlobalDatabase.csproj.CopyComplete

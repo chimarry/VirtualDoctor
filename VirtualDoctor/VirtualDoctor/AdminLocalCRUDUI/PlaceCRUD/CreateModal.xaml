@@ -1,0 +1,63 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.PlaceCRUD.CreateModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.PlaceCRUD"
+        mc:Ignorable="d"
+        Title="CreateModal" Height="800" Width="800">
+    <Grid x:Name="Grid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#1E222D" Offset="0"/>
+                <GradientStop Color="#95A493" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Button x:Name="SaveButton" HorizontalAlignment="Center"  Grid.Row="7" VerticalAlignment="Center"  Grid.Column="2"
+                 Width="120" Height="28"   Background="#7d9e7f" Foreground="White" FontWeight="Bold" Click="SaveButton_Click" IsDefault="True">
+            <TextBlock Width="28">Save</TextBlock>
+        </Button>
+        <Label Content="Name" x:Name="NameLabel" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="244" Height="35"/>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="28" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Country Name" x:Name="CountryNameLabel" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Postal code" x:Name="PostalCodeLabel" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Radiation" x:Name="RadiationLabel" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Height="29" Margin="10,56,0,0" Grid.Row="2" TextWrapping="Wrap" x:Name="CountryNameBox" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="PostalCodeBox" HorizontalAlignment="Left" Height="29" Margin="10,58,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <ComboBox x:Name="RadiationComboBox"  HorizontalAlignment="Left" Margin="194,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="60" Height="26" RenderTransformOrigin="6.875,0.538" Grid.Column="1"/>
+        <Label Content="Air quality" x:Name="AirQualityLabel" HorizontalAlignment="Left" Margin="10,60,0,0" Grid.Row="4" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+        <ComboBox x:Name="AirQualityComboBox" HorizontalAlignment="Left" Margin="194,60,0,0" Grid.Row="4" VerticalAlignment="Top" Width="60" Height="26" Grid.Column="1"/>
+        <Label Content="Food quality" x:Name="FoodQualityLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="122" />
+        <Label Content="Terrain quality" x:Name="TerrainQualityLabel"  Grid.Column="1" HorizontalAlignment="Left" Margin="10,53,0,0" Grid.Row="1" VerticalAlignment="Top" Width="122" />
+        <ComboBox Grid.Column="1" x:Name="FoodQualityComboBox" HorizontalAlignment="Left" Margin="194,4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60" Height="26"/>
+        <ComboBox Grid.Column="1" x:Name="TerrainQualityComboBox" HorizontalAlignment="Left" Margin="194,57,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60" Height="26"/>
+        <Label Content="Drinking water quality" x:Name="DrinkingWaterQualityLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Recreational water quality" x:Name="RecreationalWaterLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,56,0,0" Grid.Row="2" VerticalAlignment="Top" Width="170"/>
+        <ComboBox Grid.Column="1" Height="26" x:Name="DrinkingWaterComboBox" HorizontalAlignment="Left" Margin="194,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="60"/>
+        <ComboBox Grid.Column="1" Height="26" x:Name="RecreationalWaterComboBox" HorizontalAlignment="Left" Margin="194,56,0,0" Grid.Row="2" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.475,1.682"/>
+        <Label Content="Inland water quality" x:Name="InlandWaterQualityLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="170"/>
+        <Label Content="Medical vaste information" x:Name="MedicalVasteLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,58,0,0" Grid.Row="3" VerticalAlignment="Top" Width="170"/>
+        <ComboBox Grid.Column="1" x:Name="InlandWaterQualityComboBox" Height="26" HorizontalAlignment="Left" Margin="194,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="60"/>
+        <ComboBox Grid.Column="1" x:Name="MedicalVasteComboBox" Height="26" HorizontalAlignment="Left" Margin="196,58,0,0" Grid.Row="3" VerticalAlignment="Top" Width="58"/>
+        <Label Content="Noise information" x:Name="NoiseInformationLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="170"/>
+        <ComboBox Grid.Column="1" x:Name="NoiseInformationComboBox" Height="26" HorizontalAlignment="Left" Margin="196,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="58"/>
+        <Label x:Name="MessageLabel" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Height="200" Width="362">
+            <TextBlock TextWrapping="Wrap"  Height="169" Width="352"/>
+        </Label>
+    </Grid>
+</Window>

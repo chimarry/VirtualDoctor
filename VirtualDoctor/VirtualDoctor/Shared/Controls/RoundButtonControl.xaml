@@ -1,0 +1,93 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:Custom="http://schemas.microsoft.com/winfx/2006/xaml/composite-font"
+	x:Class="VirtualDoctor.Shared.Controls.RoundButtonControl"
+	x:Name="RoundButton"
+	Width="100" Height="100">
+
+    <UserControl.Resources >
+        <Style x:Key ="Round">
+            <Setter Property="Border.CornerRadius" Value="500"/>
+        </Style>
+
+        <Style x:Key="HalfRound">
+            <Setter Property="Border.CornerRadius" Value="500,500,0,0"/>
+        </Style>
+
+        <ControlTemplate x:Key="GlassButton" TargetType="{x:Type Button}">
+            <ControlTemplate.Resources>
+                <Storyboard x:Key="Timeline1">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="GlowBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+                <Storyboard x:Key="Timeline2">
+                    <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="GlowBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                        <SplineDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+                    </DoubleAnimationUsingKeyFrames>
+                </Storyboard>
+            </ControlTemplate.Resources>
+
+            <Border  Background="#7d9e7f"  Width="Auto" Height="Auto" Style="{DynamicResource Round}" x:Name="BorderOutline">
+            
+                <!--Bind Corner Radius to Border Outline Corner Radius-->
+                <Border x:Name="border" Style="{DynamicResource Round}" Width="Auto">
+                    <Grid>
+                  
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition Height="0.5*"/>
+                        </Grid.RowDefinitions>
+                        <Border Opacity="0" HorizontalAlignment="Stretch" Margin="0,0,0,0" x:Name="GlowBorder" Style="{DynamicResource Round}" Width="Auto" Grid.RowSpan="2">
+                            <Border.Background>
+                                <Custom:RadialGradientBrush>
+                                    <Custom:RadialGradientBrush.RelativeTransform>
+                                        <Custom:TransformGroup>
+                                            <Custom:ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.633" ScaleY="0.652"/>
+                                            <Custom:SkewTransform AngleX="0" AngleY="0" CenterX="0.5" CenterY="0.5"/>
+                                            <Custom:RotateTransform Angle="0" CenterX="0.5" CenterY="0.5"/>
+                                            <Custom:TranslateTransform X="0.022" Y="0.452"/>
+                                        </Custom:TransformGroup>
+                                    </Custom:RadialGradientBrush.RelativeTransform>
+                                    <Custom:GradientStop Color="#7Fffffff" Offset="0"/>
+                                    <Custom:GradientStop Color="#007D9E7F" Offset="1"/>
+                                </Custom:RadialGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <ContentPresenter HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Grid.RowSpan="2" x:Name="contentPresenter"/>
+                                       
+                    </Grid>
+                </Border>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="True">
+                    <!--<Setter Property="Opacity" TargetName="ShineBorder" Value="0.4"/>-->
+                    <Setter Property="Opacity" TargetName="border" Value="1"/>
+                    <Setter Property="Background" TargetName="border" Value="#4C000000"/>
+                    <Setter Property="Opacity" TargetName="GlowBorder" Value="0"/>
+                    <Setter Property="Visibility" TargetName="GlowBorder" Value="Hidden"/>
+                </Trigger>
+
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard Storyboard="{StaticResource Timeline1}"/>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard x:Name="Timeline2_BeginStoryboard" Storyboard="{StaticResource Timeline2}"/>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </UserControl.Resources>
+
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="Button"/>
+    </UserControl.Triggers>
+
+    <Grid x:Name="LayoutRoot" >
+        <Button Foreground="White"  Background="Red"  Template="{DynamicResource GlassButton}" x:Name="Button">
+            <TextBlock x:Name="TextProperities" Width="100"></TextBlock>
+        </Button>
+    </Grid>
+</UserControl>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.OrganizationalAdminMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI"
+        mc:Ignorable="d"
+       Title="dr Name LastName" Height="Auto" Width="Auto" xmlns:my="clr-namespace:VirtualDoctor.Shared.Controls">
+
+    <Grid x:Name="Grid">
+
+        <Grid.RowDefinitions x:Uid="RowDefinitions">
+            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Shared/Images/ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+
+        <my:RoundButtonControl   x:Name="Role" Grid.Column="1" Grid.Row="2"  MouseDoubleClick="Role_MouseDoubleClick"/>
+        <my:RoundButtonControl   x:Name="Clinic" Grid.Column="0" Grid.Row="2" MouseDoubleClick="Clinic_MouseDoubleClick" />
+        <my:RoundButtonControl   x:Name="Place" Grid.Column="2" Grid.Row="2" MouseDoubleClick="Place_MouseDoubleClick" />
+        <my:RoundButtonControl   x:Name="Doctor" Grid.Column="2" Grid.Row="1" MouseDoubleClick="Doctor_MouseDoubleClick" />
+        <my:RoundButtonControl   x:Name="MedicalTitle" Grid.Column="0" Grid.Row="1" MouseDoubleClick="MedicalTitle_MouseDoubleClick" />
+        <my:VirtualAssistantControl x:Name="VirtualAssistant" Grid.Column="4" Grid.RowSpan="2" Grid.Row="0" />
+        <my:TranslateControl x:Name="Translate" Grid.Column="3" Grid.Row="3" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
+    </Grid>
+
+</Window>

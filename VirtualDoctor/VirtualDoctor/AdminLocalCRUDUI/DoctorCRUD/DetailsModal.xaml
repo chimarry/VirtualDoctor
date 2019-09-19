@@ -1,0 +1,109 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.DoctorCRUD.DetailsModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.DoctorCRUD"
+        mc:Ignorable="d"
+        Title="DetailsModal" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="ListBoxItemStyle" TargetType="ListBoxItem">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Background" Value="Blue" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListBoxItem" >
+                        <Border
+                          Name="Border"
+                          Padding="2"
+                          SnapsToDevicePixels="true" BorderThickness="0,0,0,4" BorderBrush="Green">
+                            <ContentPresenter />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid x:Name="Grid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#1E222D" Offset="0"/>
+                <GradientStop Color="#95A493" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+
+            <ColumnDefinition Width="2.7*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="MainInfoGrid" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="MessageLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="365" Grid.Column="1" Grid.Row="6">
+                <TextBlock TextWrapping="Wrap" Height="60" Width="355"/>
+            </Label>
+            <Label Content="Name" x:Name="NameLabel" Margin="21,10,-38,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="30" Margin="21,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+            <Label Content="Last name" x:Name="LastNameLabel" HorizontalAlignment="Left" Margin="21,10.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="215"/>
+            <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="30" Margin="21,41.2,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="215"/>
+            <Label Content="Work experience" x:Name="WorkExperienceLabel" HorizontalAlignment="Left" Margin="21,9.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="215"/>
+            <TextBox x:Name="WorkExperinceBox" HorizontalAlignment="Left" Height="30" Margin="21,40.4,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="215"/>
+            <Label Content="Account" x:Name="AccountLabel" HorizontalAlignment="Left" Margin="21,9.6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="215"/>
+            <ComboBox x:Name="AccountComboBox" HorizontalAlignment="Left" Margin="21,43.6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="215" Height="30"/>
+        </Grid>
+        <Grid x:Name="DetailsGrid" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="ClinicsGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <ListBox x:Name="ClinicsListBox" Grid.Column="2" HorizontalAlignment="Left" Height="300" Margin="88,25,0,-115" Grid.RowSpan="5" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Stretch" ItemContainerStyle="{StaticResource ListBoxItemStyle}" Grid.ColumnSpan="2"/>
+                <Label Content="Clinics"  x:Name="ClinicsLabel" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92"/>
+
+            </Grid>
+            <Grid x:Name="MedicalTitlesGrid" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.4*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+                <ListBox x:Name="MedicalTitlesListBox" Grid.Column="2" Height="300" Margin="88,20,0,-110" Grid.RowSpan="5" VerticalAlignment="Top" VerticalContentAlignment="Stretch" ItemContainerStyle="{StaticResource ListBoxItemStyle}" Grid.ColumnSpan="2"/>
+                <Label Content="Medical titles" x:Name="MedicalTitleLabel" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

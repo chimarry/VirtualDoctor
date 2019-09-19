@@ -1,0 +1,39 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.ClinicCRUD.CreateModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.ClinicCRUD"
+        mc:Ignorable="d"
+        Title="CreateModal" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#1E222D" Offset="0"/>
+                <GradientStop Color="#95A493" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="NameLabel" Content="Clinics name" HorizontalAlignment="Left" Margin="99,0,0,10" VerticalAlignment="Bottom" Width="277" Height="32" Grid.Row="0"/>
+        <Button x:Name="SaveButton" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center" 
+                 Width="120" Height="28"   Background="#7d9e7f" Foreground="White" FontWeight="Bold" Click="SaveButton_Click" IsDefault="True" Grid.Column="2">
+            <TextBlock Width="28">Save</TextBlock>
+        </Button>
+        <TextBox x:Name="NameBox" TextAlignment="Center" HorizontalAlignment="Left" Height="45" Margin="99,0,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="277" TextChanged="NameBox_TextChanged"/>
+        <Label x:Name="MessageLabel" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="332" Height="85" Grid.Column="1">
+            <TextBlock Width="316" Height="75"></TextBlock>
+        </Label>
+        <Label Content="Place" x:Name="PlaceLabel" HorizontalAlignment="Left" Margin="99,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="277" Height="36"/>
+        <ComboBox HorizontalAlignment="Left" Margin="99,64,0,0" Grid.Row="2" VerticalAlignment="Top" x:Name="PlaceComboBox" Width="277" Height="45" SelectionChanged="PlaceComboBox_SelectionChanged" />
+    </Grid>
+</Window>

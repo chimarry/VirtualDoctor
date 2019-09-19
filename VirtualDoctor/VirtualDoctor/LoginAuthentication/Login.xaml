@@ -1,0 +1,47 @@
+﻿<Window x:Class="VirtualDoctor.LoginAuthentication.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.LoginAuthentication"
+        xmlns:my="clr-namespace:VirtualDoctor.Shared.Controls"
+        mc:Ignorable="d"
+        Title="Login" >
+
+    <Grid x:Name="Grid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Shared/Images/ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.6*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Column="0" HorizontalAlignment="Left" Height="364" Margin="105,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="285">
+            <Label x:Name="EmailLabel"  Content="Email" Margin="22,0,105,0" HorizontalAlignment="Center" Foreground="White" FontWeight="Bold" Width="158" Height="32" FontSize="12"/>
+            <TextBox x:Name="EmailBox" Height="30" TextWrapping="Wrap" Margin="22,0,10,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" TextChanged="EmailBox_TextChanged"/>
+            <Rectangle  Height="41" Margin="22,0,10,0" />
+
+            <Label x:Name="PasswordLabel" Content="Password" Margin="22,0,10,0" Foreground="White" FontWeight="Bold" Height="31" FontSize="12"/>
+            <PasswordBox x:Name="PasswordBox" Height="30" Margin="22,0,10,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" PasswordChanged="PasswordBox_PasswordChanged"/>
+            <Rectangle Height="71" Margin="22,0,10,0"/>
+
+            <StackPanel Height="126" Margin="22,0,10,0">
+                <Button x:Name="LoginButton" Content="Login" Background="#7d9e7f" Foreground="White" FontWeight="Bold"  Grid.Column="1" HorizontalAlignment="Right" Margin="8,-1,0,0" VerticalAlignment="Top"  Width="120" Height="30" Click="LoginButton_Click"/>
+                <Rectangle Height="36"></Rectangle>
+                <!--<my:GoBackControl x:Name="GoBack" HorizontalAlignment="Right" Margin="10,0,0,-1" Width="120" Height="28" VerticalAlignment="Top" />-->
+            </StackPanel>
+
+        </StackPanel>
+        <my:VirtualAssistantControl x:Name="VirtualAssistant" Height="168" VerticalAlignment="Top" Grid.Column="1"/>
+        <my:TranslateControl Grid.Column="1" HorizontalAlignment="Right" Height="33"  Grid.Row="1" VerticalAlignment="Bottom" Width="100"/>
+        <Label Foreground="Red" FontWeight="Bold"   x:Name="ErrorLabel" HorizontalAlignment="Left" Margin="395,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="323" Height="125" Grid.ColumnSpan="2">
+            <TextBlock x:Name="TextBlock" TextWrapping="Wrap"></TextBlock>
+        </Label>
+    </Grid>
+</Window>

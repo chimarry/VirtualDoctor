@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="AddingSuccess" xml:space="preserve">
+    <value>You successfully added new item in database.</value>
+  </data>
+  <data name="AirQuality" xml:space="preserve">
+    <value>Air quality</value>
+  </data>
+  <data name="BackwardsButton" xml:space="preserve">
+    <value>&lt; Previous</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Birth place</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Confirm delete?</value>
+  </data>
+  <data name="CountryName" xml:space="preserve">
+    <value>Country name</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="DatabaseError" xml:space="preserve">
+    <value>There has been database error. 
+Detailed message is in log file.</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeletingSuccess" xml:space="preserve">
+    <value>You successfully deleted item from database.</value>
+  </data>
+  <data name="DrinkingWaterQuality" xml:space="preserve">
+    <value>Drinking water quality</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EntityExists" xml:space="preserve">
+    <value>The operation could not be
+performed, because item already
+exists in database.</value>
+  </data>
+  <data name="EntityNotFound" xml:space="preserve">
+    <value>No results found.</value>
+  </data>
+  <data name="FathersName" xml:space="preserve">
+    <value>Fathers full name</value>
+  </data>
+  <data name="FathersProfession" xml:space="preserve">
+    <value>Fathers profession</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="FirstPageButton" xml:space="preserve">
+    <value>&lt;&lt;Jump to first</value>
+  </data>
+  <data name="FoodQuality" xml:space="preserve">
+    <value>FoodQuality</value>
+  </data>
+  <data name="ForwardButton" xml:space="preserve">
+    <value>&gt; Next</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="GiveReceipt" xml:space="preserve">
+    <value>Give receipt</value>
+  </data>
+  <data name="GoBack" xml:space="preserve">
+    <value>Go back</value>
+  </data>
+  <data name="InlandWaterQualtiy" xml:space="preserve">
+    <value>Inland water quality</value>
+  </data>
+  <data name="InsuranceNumber" xml:space="preserve">
+    <value>Insurance number</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="LastPageButton" xml:space="preserve">
+    <value>&gt;&gt;Jump to last</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="MarriageStatus" xml:space="preserve">
+    <value>Marriage status</value>
+  </data>
+  <data name="Married" xml:space="preserve">
+    <value>Married</value>
+  </data>
+  <data name="MedicalRecordsReview" xml:space="preserve">
+    <value>Medical records</value>
+  </data>
+  <data name="MedicalTitle" xml:space="preserve">
+    <value>Medical title</value>
+  </data>
+  <data name="MedicalVasteInformation" xml:space="preserve">
+    <value>Medical vaste information</value>
+  </data>
+  <data name="MothersName" xml:space="preserve">
+    <value>Mothers  full name</value>
+  </data>
+  <data name="MothersProfession" xml:space="preserve">
+    <value>Mothers profession</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NoiseInformation" xml:space="preserve">
+    <value>Noise information</value>
+  </data>
+  <data name="NoKnownRoles" xml:space="preserve">
+    <value>You cannot login without role in
+system, and you have non.</value>
+  </data>
+  <data name="NotMarried" xml:space="preserve">
+    <value>Not married</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PatientControl" xml:space="preserve">
+    <value>Patient control</value>
+  </data>
+  <data name="Place" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="Places" xml:space="preserve">
+    <value>Places</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="PutInRecord" xml:space="preserve">
+    <value>Put in record</value>
+  </data>
+  <data name="Radiation" xml:space="preserve">
+    <value>Radiation</value>
+  </data>
+  <data name="RecreationalWaterQuality" xml:space="preserve">
+    <value>Recreational water quality</value>
+  </data>
+  <data name="ResidancePlace" xml:space="preserve">
+    <value>Residance place</value>
+  </data>
+  <data name="RoleName" xml:space="preserve">
+    <value>Role name</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ShowingResults" xml:space="preserve">
+    <value>Showing results</value>
+  </data>
+  <data name="TerrainQuality" xml:space="preserve">
+    <value>Terrain quality</value>
+  </data>
+  <data name="UBN" xml:space="preserve">
+    <value>UBN</value>
+  </data>
+  <data name="UpdatingSuccess" xml:space="preserve">
+    <value>Item has been successfully updated.</value>
+  </data>
+  <data name="VirtualAssistant" xml:space="preserve">
+    <value>Virtual assistant</value>
+  </data>
+  <data name="WrongPasswordOrEmail" xml:space="preserve">
+    <value>Given data is not valid.
+For safety of the account you are
+trying to access, the exact error will
+not be given.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="CurrentClinics" xml:space="preserve">
+    <value>Current clinics</value>
+  </data>
+  <data name="MedicalTitles" xml:space="preserve">
+    <value>Medical titles</value>
+  </data>
+  <data name="PastClinics" xml:space="preserve">
+    <value>Past clinics</value>
+  </data>
+  <data name="WorkExperience" xml:space="preserve">
+    <value>Work experience</value>
+  </data>
+  <data name="Clinics" xml:space="preserve">
+    <value>Clinics</value>
+  </data>
+  <data name="AddRight" xml:space="preserve">
+    <value>Add &gt;&gt;</value>
+  </data>
+  <data name="Clinic" xml:space="preserve">
+    <value>Clinic</value>
+  </data>
+  <data name="GettingTitleDate" xml:space="preserve">
+    <value>Getting title date</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>Since</value>
+  </data>
+  <data name="Until" xml:space="preserve">
+    <value>Until</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Accounts" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="Doctors" xml:space="preserve">
+    <value>Doctors</value>
+  </data>
+</root>

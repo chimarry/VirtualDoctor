@@ -1,0 +1,90 @@
+﻿<Window x:Class="VirtualDoctor.AdminLocalCRUDUI.MedicalRecordCRUD.EditModal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualDoctor.AdminLocalCRUDUI.MedicalRecordCRUD"
+        mc:Ignorable="d"
+        Title="EditModal" Height="450" Width="800">
+    <Grid x:Name="Container" Margin="0,0,0,-282">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.2*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\VirtualDoctor\Shared\Images\ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <Grid x:Name="Form" Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="1" Height="670" RenderTransformOrigin="0.542,0.514">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label x:Name="NameLabel" Content="Name" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="0"/>
+            <TextBox  x:Name="NameBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="1"/>
+
+            <Label Content="Last name" HorizontalAlignment="Left" x:Name="LastNameLabel"  Margin="24,10,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="2"/>
+            <TextBox x:Name="LastNameBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="3"/>
+
+            <Label Content="JMB" x:Name="JMBLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="4"/>
+            <TextBox x:Name="JmbBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="5"/>
+
+            <Label Content="Birth place" x:Name="BirthPlaceLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="6"/>
+            <TextBox x:Name="BirthPlaceBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="0" Grid.Row="7"/>
+
+            <Label x:Name="BirthDateLabel" Content="Date of birth" HorizontalAlignment="Left" Margin="24,7,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="8" Grid.RowSpan="2"/>
+            <DatePicker x:Name="BirthDatePicker" HorizontalAlignment="Left" Margin="24,0,0,0" Grid.Row="9" VerticalAlignment="Top" Width="200"/>
+
+            <Label Content="GenderLabel" x:Name="GenderLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="95"  FontSize="12" Height="25" Grid.Column="0"  Grid.Row="10"/>
+            <CheckBox x:Name="MaleCheckBox" Content="Male" HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="11" VerticalAlignment="Top" Checked="Male_Checked" Unchecked="Male_Unchecked"/>
+            <CheckBox x:Name="FemaleCheckBox" Content="Female" HorizontalAlignment="Left" Margin="24,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="81" Checked="Female_Checked" Unchecked="Female_Unchecked"/>
+
+            <CheckBox x:Name="MarriedCheckBox" Content="Married" HorizontalAlignment="Left" Margin="105,10,0,0" Grid.Row="11" VerticalAlignment="Top" Checked="MarriedCheckBox_Checked" Unchecked="MarriedCheckBox_Unchecked"/>
+            <CheckBox x:Name="NotMarriedCheckBox" Content="Not married" HorizontalAlignment="Left" Margin="105,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="81" Checked="NotMarriedCheckBox_Checked" Unchecked="NotMarriedCheckBox_Unchecked"/>
+            <Label x:Name="MarriageStatusLabel" Content="Marriage status" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="123" RenderTransformOrigin="0.373,1.115" FontSize="12" Height="25" Grid.Column="0"  Grid.Row="10"/>
+
+            <Label Content="Mothers name" x:Name="MothersNameLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134"  FontSize="12" Height="25" Grid.Column="1"  Grid.Row="0"/>
+            <TextBox x:Name="MothersNameBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="1" Grid.Row="1"/>
+
+            <Label Content="Mothers profession" x:Name="MothersProfessionLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134" FontSize="12" Height="25" Grid.Column="1"  Grid.Row="2"/>
+            <TextBox x:Name="MothersProfessionBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="1" Grid.Row="3"/>
+
+            <Label Content="Fathers name" x:Name="FathersNameLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134"  FontSize="12" Height="25" Grid.Column="1"  Grid.Row="4"/>
+            <TextBox x:Name="FathersNameBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="1" Grid.Row="5"/>
+
+            <Label Content="Fathers profession" x:Name="FathersProfessionLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134" FontSize="12" Height="25" Grid.Column="1"  Grid.Row="6"/>
+            <TextBox x:Name="FathersProfessionBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="1" Grid.Row="7"/>
+
+            <Label Content="Insurance number" x:Name="InsuranceNumberLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134"  FontSize="12" Height="25" Grid.Column="1"  Grid.Row="8"/>
+            <TextBox x:Name="InsuranceNumberBox" HorizontalAlignment="Left" Height="23" Margin="24,5,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="200" Grid.Column="1" Grid.Row="9"/>
+
+            <Label Content="Residance place" x:Name="ResidancePlaceLabel" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" Width="134"  FontSize="12" Height="25" Grid.Column="1"  Grid.Row="10"/>
+            <ComboBox x:Name="ResidancePlaceComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="24,3,0,0" Grid.Row="11" VerticalAlignment="Top" Width="200"/>
+            <Button x:Name="SaveButton" Grid.Column="1" HorizontalAlignment="Left" Margin="124,0,0,-1" Grid.Row="13" VerticalAlignment="Top" Width="120" Height="28"
+                  Click="SaveButton_Click"  Background="#7d9e7f" Foreground="White" FontWeight="Bold">
+                <TextBlock RenderTransformOrigin="0.5,0.938" Width="28"  >Save</TextBlock>
+            </Button>
+        </Grid>
+        <Label x:Name="MessageLabel" Grid.Column="1" HorizontalAlignment="Left" Margin="24,102,0,0" VerticalAlignment="Top" Height="139" Width="343" Grid.ColumnSpan="2">
+            <TextBlock TextWrapping="Wrap"  Height="129" Width="333"/>
+        </Label>
+
+    </Grid>
+</Window>

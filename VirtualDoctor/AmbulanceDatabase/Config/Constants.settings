@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AmbulanceDatabase.Config" GeneratedClassName="Constants">
+  <Profiles />
+  <Settings>
+    <Setting Name="OpenningConnectionFailed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Database openning connection failed </Value>
+    </Setting>
+    <Setting Name="ConnectionSuccess" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Database connection succedded </Value>
+    </Setting>
+    <Setting Name="ConnectionClosed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Database connection closed </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

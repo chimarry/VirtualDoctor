@@ -1,0 +1,7 @@
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\bin\Release\ALogger.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\bin\Release\ALogger.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\obj\Release\ALogger.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\obj\Release\ALogger.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\obj\Release\ALogger.dll
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\obj\Release\ALogger.pdb
+C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\ALogger\bin\Release\ALogger.dll.config
