@@ -3,3 +3,6 @@
 ################################################################################
 
 /VirtualDoctor/.vs
+/.vs
+/VirtualDoctor/MultiSelectComboBox/obj/x86/Debug
+/VirtualDoctor/MultiSelectComboBox/obj/x86/Release
