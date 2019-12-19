@@ -11,7 +11,7 @@
     <Grid x:Name="Grid">
 
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\PC\Desktop\Svastara\VSProjects\VirtualDoctor\VirtualDoctor\Shared\Images\ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
+            <ImageBrush ImageSource="/Shared/Images/ThemeDNA.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="11*"/>
