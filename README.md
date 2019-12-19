@@ -18,7 +18,7 @@ Details of implementation:
 As DI is not supported in WPF applications, I used tradicional Factory Methods for creating objects (for example Services). SOLID principles are followed. In backend part, in need for code maintability and reusability, I used different classes as ServiceExecutor for example and DbCommand, that are core and main classes of whole implementation, each with Single Responsability. See code for additional details or contact me on my email: marija.vanja.novakovic@gmail.com. 
 
 For you to run program:
-First, script for generating database is in project AmbulanceDatabase, subfolder Scripts. Run it in some MySQL DBMS tool like MySQLWorkbench. ConnectionString is saved in Properties.settings file in Config subfolder of same project. Change it.
+First, script for generating database is in project AmbulanceDatabase, subfolder Scripts. Run it in some MySQL DBMS tool like MySQLWorkbench. ConnectionString is saved in Properties.settings file in Config subfolder of same project. Change it. Some roles should be inserted in database before using it. You can use Insert script for that purpose. That are OrganizationalAdmin, PatientAdmin, DoctorAdmin, AccountsAdmin.
 
 Read also:
-Some roles should be inserted in database before using it. That are OrganizationalAdmin, PatientAdmin, DoctorAdmin, AccountsAdmin. Also, password hashing needs to be implemented. For now, passwordhash in database is users raw password. This project was for course purposes, so some things are not properly implemented.
+Also, password hashing needs to be implemented. For now, passwordhash in database is users raw password. This project was for course purposes, so some things are not properly implemented.
